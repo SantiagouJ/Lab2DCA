@@ -5,12 +5,16 @@ export class Caja1 extends HTMLElement {
         this.attachShadow({mode: "open"})
         this.shadowRoot.innerHTML = `
             <style>
-                h1 {
+                div {
+                    width: 300px;
+                    height: 300px;
                     border: 1px solid;
                 }
             </style>
             
-            <h1>Hola mundo</h1>
+            <div>
+                <h1>Hola mundo</h1>
+            </div>
         `
 
     }
