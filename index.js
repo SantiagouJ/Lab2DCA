@@ -1,3 +1,22 @@
-import  {Caja1} from "./allComponents/components.js";
+import * as components from "./src/components/indexPadre.js"
 
-customElements.define("caja-grande", Caja1)
+class AppContainer extends HTMLElement{
+    constructor(){
+        super();
+
+        this.attachShadow({mode: "open"})
+    }
+
+    connectedCallBack(){
+        this.render();
+    }
+    render(){
+        this.shadowRoot.innerHTML = `
+            <h1>Hola Mateo</h1>
+            
+
+
+        `
+    }
+}
+customElements.define("app-container", AppContainer)
