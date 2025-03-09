@@ -1,17 +1,14 @@
-class Caja1 extends HTMLElement {
+class CajaGrande extends HTMLElement {
     static get observedAttributes() {
-        return ["img","cat","title","desc"];
+        return ["img","cat","title","desc","autor","date"];
     }
     
-    
-
-
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
     }
 
-    connectedCallBack(){
+    connectedCallback(){
         this.render();
     }
 
@@ -25,82 +22,102 @@ class Caja1 extends HTMLElement {
         render(){
             this.shadowRoot.innerHTML = `
             <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100vh;
-                    background-color: #f5f5f5;
-                }
-                .card {
-                    width: 400px;
-                    background: white;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                }
-                .card-image {
-                    height: 200px;
-                    background: url('image.jpg') center/cover;
-                }
-                .card-content {
-                    padding: 16px;
-                }
-                .category {
-                    color: #888;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                }
-                .title {
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin: 8px 0;
-                }
-                .description {
-                    color: #555;
-                    font-size: 14px;
-                }
-                .card-footer {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 16px;
-                    font-size: 12px;
-                    color: #777;
-                }
-                .authors {
-                    display: flex;
-                    align-items: center;
-                }
-                .authors img {
-                    width: 24px;
-                    height: 24px;
-                    border-radius: 50%;
-                    margin-right: 4px;
-                }
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.categories button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 10px 14px;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.search {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+.category {
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+}
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.description {
+    color: #777;
+    font-size: 16px;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+    padding: 20px;
+}
             </style>
             
-                <div class="card">
-        <div class="card-image"></div>
-        <div class="card-content">
-            <span class="category">${this.title}</span>
-            <h2 class="title">Revolutionizing software development with cutting-edge tools</h2>
-            <p class="description">Our latest engineering tools are designed to streamline workflows and boost productivity. Discover how these innovations are transforming the software...</p>
-            <div class="card-footer">
-                <div class="authors">
-                    <img src="author1.jpg" alt="Remy Sharp">
-                    <img src="author2.jpg" alt="Travis Howard">
-                    <span>Remy Sharp, Travis Howard</span>
+            <div class="card">
+                <img src="${this.img}" alt="">
+                <div class="card-content">
+                    <span class="category">${this.cat}</span>
+                    <h2 class="title">${this.title}</h2>
+                    <p class="description">${this.desc}</p>
                 </div>
-                <span class="date">July 14, 2021</span>
+                <div class="card-footer">
+                    <span>${this.autor}</span>
+                    <span>${this.date}</span>
+                </div>
             </div>
-        </div>
-    </div>
         `;
         }
     
 }
 
-customElements.define("caja-grande", Caja1)
-export default Caja1
+customElements.define("caja-grande", CajaGrande)
+export default CajaGrande

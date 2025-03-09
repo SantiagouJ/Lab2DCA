@@ -1,1 +1,1 @@
-export {default as Caja1} from "./bigCard.js"
+export {default as CajaGrande} from "./bigCard.js"
