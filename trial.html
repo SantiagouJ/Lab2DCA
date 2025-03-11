@@ -3,23 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="trial_styles.css">
 </head>
 <body>
-    
-    <div class="card">
-        <img src="./public/photos/img1.jpg" alt="">
-        <div class="card-content">
-            <span class="category">${this.cat}</span>
-            <h2 class="title">${this.title}</h2>
-            <p class="description">${this.desc}</p>
+    <section class="highlight-card">
+        <div class="card">
+            <img src="${this.img}" alt="">
+            <div class="card-content">
+                <span class="category">${this.cat}</span>
+                <h2 class="title">${this.title}</h2>
+                <p class="description">${this.desc}</p>
+            </div>
+            <div class="card-footer">
+                <span>${this.autor}</span>
+                <span>${this.date}</span>
+            </div>
         </div>
-        <div class="card-footer">
-            <span>${this.autor}</span>
-            <span>${this.date}</span>
-        </div>
-    </div>
+    </section>
     
+    <section class="container">
+
+        <div class="card">
+            <img src="./public/photos/img1.jpg" alt="">
+            <div class="card-content">
+                <span class="category">${this.cat}</span>
+                <h2 class="title">${this.title}</h2>
+                <p class="description">${this.desc}</p>
+            </div>
+            <div class="card-footer">
+                <span>${this.autor}</span>
+                <span>${this.date}</span>
+            </div>
+        </div>
+
+       <div class="db-card">
+
+        <div class="card-no-img">
+            <img src="  " alt="">
+            <div class="card-content">
+                <span class="category">${this.cat}</span>
+                <h2 class="title">${this.title}</h2>
+                <p class="description">${this.desc}</p>
+            </div>
+            <div class="card-footer">
+                <span>${this.autor}</span>
+                <span>${this.date}</span>
+            </div>
+        </div>
+
+        <div class="card-no-img">
+            <img src="  " alt="">
+            <div class="card-content">
+                <span class="category">${this.cat}</span>
+                <h2 class="title">${this.title}</h2>
+                <p class="description">${this.desc}</p>
+            </div>
+            <div class="card-footer">
+                <span>${this.autor}</span>
+                <span>${this.date}</span>
+            </div>
+        </div>
+
+       </div>
+
+        <div class="card">
+            <img src="./public/photos/img1.jpg" alt="">
+            <div class="card-content">
+                <span class="category">${this.cat}</span>
+                <h2 class="title">${this.title}</h2>
+                <p class="description">${this.desc}</p>
+            </div>
+            <div class="card-footer">
+                <span>${this.autor}</span>
+                <span>${this.date}</span>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="footer-card">
+        <h1>Hola</h1>
+            
+    </section>
+
+
+</body>
 </body>
 </html>

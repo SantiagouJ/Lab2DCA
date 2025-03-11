@@ -23,45 +23,19 @@ class CajaGrande extends HTMLElement {
             this.shadowRoot.innerHTML = `
            
                 <style>
-                body {
+            body {
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 20px;
                 background-color: #f9f9f9;
-            }
-            .container {
-                max-width: 1000px;
-                margin: 0 auto;
-            }
-            .header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-            .categories button {
-                background: none;
-                border: 1px solid #ccc;
-                padding: 10px 14px;
-                margin-right: 8px;
-                cursor: pointer;
-                border-radius: 5px;
-            }
-            .search {
-                border: 1px solid #ccc;
-                padding: 10px;
-                border-radius: 5px;
-            }
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-                gap: 30px;
             }
             .card {
                 background: white;
                 border-radius: 15px;
                 overflow: hidden;
                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+                width: 550px;
+                height: 500px
             }
             .card img {
                 width: 100%;

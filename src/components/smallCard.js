@@ -1,6 +1,6 @@
 class CajaPeque extends HTMLElement{
     static get observedAttributes() {
-        return ["img","cat","title","desc","autor","date"];
+        return ["img","cat","title","desc","autor","date", "class"];
     }
 
     constructor() {
@@ -29,21 +29,6 @@ class CajaPeque extends HTMLElement{
                 padding: 20px;
                 background-color: #f9f9f9;
             }
-
-            .container {
-                width: 80%;
-                border: solid black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 20px;
-            }
-
             .card {
                 background: white;
                 border-radius: 15px;
@@ -51,7 +36,7 @@ class CajaPeque extends HTMLElement{
                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
                 display: flex;
                 flex-direction: column;
-                width: 30%;
+                width: 350px;
                 height: 100%;
 
             }
@@ -75,7 +60,7 @@ class CajaPeque extends HTMLElement{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 14px;
+                font-size: 11px;
                 color: #777;
                 padding: 15px;
             }
@@ -83,11 +68,11 @@ class CajaPeque extends HTMLElement{
 
             </style>
 
-         <div class="card">
-            <img src="./public/photos/img1.jpg" alt="">
+         <div class="${this.class}">
+            <img src="${this.img}" alt="">
             <div class="card-content">
                 <span class="category">${this.cat}</span>
-                <h2 class="title">${this.title}</h2>
+                <h4 class="title">${this.title}</h4>
                 <p class="description">${this.desc}</p>
             </div>
             <div class="card-footer">
@@ -95,12 +80,6 @@ class CajaPeque extends HTMLElement{
                 <span>${this.date}</span>
             </div>
         </div>
-
-        
-
-
-    
-</body>
             
             
             `
