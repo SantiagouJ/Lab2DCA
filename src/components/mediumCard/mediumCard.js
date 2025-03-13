@@ -20,35 +20,8 @@ class CajaMedia extends HTMLElement {
 
     render(){
         this.shadowRoot.innerHTML=`
-        
-            <style>
-                .card {
-                background: white;
-                border-radius: 15px;
-                overflow: hidden;
-                display: flex;
-                flex-direction: column;
-                width: 550px;
-                height: 250px;
 
-            }
-
-            .card-content {
-                padding: 15px;
-            }
-
-            .card-footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 14px;
-                color: #777;
-                padding: 15px;
-            }
-
-
-            </style>
-
+            <link rel="stylesheet" href="./src/components/mediumCard/mediumCard.css">
 
                 <div class="card">
             <div class="card-content">
