@@ -13,6 +13,7 @@ class AppContainer extends HTMLElement{
     render(){
         this.shadowRoot.innerHTML = `
             <link rel="stylesheet" href="style.css" />
+            <categorie-nav></categorie-nav>
 
             <section class="highlight-card">
 

@@ -1,27 +1,22 @@
-:host {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+
 
 .middle-card{
 
     width: 80%;
     height: 400px;
-    border: solid black;
     display: flex;
     justify-self: center;
     justify-content: space-between;
+    padding: 20px;
 
 }
 .highlight-card {
     width: 80%;
     height: 500px;
-    border: solid black;
     display: flex;
     justify-self: center;
     justify-content: space-between;
+    padding: 20px;
 }
 .db-card {
     width: 30%;
@@ -43,10 +38,11 @@
 
     width: 80%;
     height: 1000px;
-    border: solid black;
     display: flex;
     justify-self: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 20px;
+
 
 }
