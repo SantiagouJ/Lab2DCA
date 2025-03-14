@@ -49,19 +49,39 @@ class AppContainer extends HTMLElement{
                 class="card"
                 img="./public/photos/img3.jpg"
                 title="Designing for the future: trends and insights"
-                desc="Stay ahead of the curve with the latest design trends and insights."></caja-peque>
+                desc="Stay ahead of the curve with the latest design trends and insights."
+                autor="Kate Morrison"
+                cat="Design"
+                date="July 14, 2021"></caja-peque>
 
                 <section class="db-card">
-
-                    <caja-peque class="card-no-img"
-                    title="Our company's journey: milestones and achievements" ></caja-peque>
-                    <caja-peque class="card-no-img"></caja-peque>
-
+                    
+                    <caja-peque 
+                    class="card-no-img  "
+                    title="Our company's journey: milestones and achievements"
+                    desc="Take a look at our company's journey and the milestones we've achieved along the way. From..."
+                    autor="Cindy Baker"
+                    cat="Company"
+                    date="July 14, 2021"></caja-peque>
+                    
+                    <caja-peque 
+                    class="card-no-img"
+                    title="Pioneering sustainable engineering solutions"
+                    desc="Learn about our commitment to sustainability and the innovative engineering solutions we're..."
+                    autor="Agnes Walker, Trevor Henderson"
+                    cat="Engineering"
+                    date="July 14, 2021"></caja-peque>
+                    
                 </section>
 
                 <caja-peque
-                class="card" 
-                img="./public/photos/img4.jpg"></caja-peque>
+                class="card"
+                img="./public/photos/img5.jpg"
+                title="Maximizing efficiency with our latest product updates"
+                desc="Our recent product updates are designed to help you maximize efficiency and achieve more. Get a detailed overview of the new features and..."
+                autor="Travis Howard"
+                cat="Product"
+                date="July 14, 2021"></caja-peque>
 
             </section>
 
