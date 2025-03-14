@@ -49,19 +49,30 @@ class AppContainer extends HTMLElement{
                 class="card"
                 img="./public/photos/img3.jpg"
                 title="Designing for the future: trends and insights"
-                desc="Stay ahead of the curve with the latest design trends and insights."></caja-peque>
+                desc="Stay ahead of the curve with the latest design trends and insights."
+                cat="Design"
+                autor="Kate Morrison"
+                date="July 14, 2021"></caja-peque>
 
                 <section class="db-card">
 
                     <caja-peque class="card-no-img"
-                    title="Our company's journey: milestones and achievements" ></caja-peque>
-                    <caja-peque class="card-no-img"></caja-peque>
+                    title="Our company's journey: milestones and achievements"
+                    cat="Company" 
+                    desc="Take a look at our company's journey and the milestones we've achieved along the way. From"
+                    autor="Cindy Baker" ></caja-peque>
+
+                    <caja-peque class="card-no-img"  title="Pioneering sustainable engineering solutions"
+                    desc="Learn about our commitment to sustainability and the innovative engineering solutions we're"
+                    cat="Engineering"></caja-peque>
 
                 </section>
 
                 <caja-peque
                 class="card" 
-                img="./public/photos/img4.jpg"></caja-peque>
+                img="./public/photos/img4.jpg" title="Maximizing efficiency with our latest product updates"
+                desc="Our recent product updates are designed to help you maximize efficiency and achieve more. Get a"
+                cat="Product"></caja-peque>
 
             </section>
 
@@ -75,43 +86,67 @@ class AppContainer extends HTMLElement{
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Engineering"
+            title="The future of AI in software engineering"
+            autor="Kate Morrison"
+            date="July 14, 2021"
+            desc="Artificial intelligence is revolutionizing software engineering. Explore how AI-driven tools are enhancing development processes and improving software"></caja-media>
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Product"
+            title="Driving growth with user-centric product design"
+            autor="Cindy Baker"
+            date="July 14, 2021"
+            desc="Our user-centric product design approach is driving significant growth. Learn about the strategies we employ to create products that resonate with users."></caja-media>
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Design"
+            title="Embracing minimalism in modern design"
+            autor="Agnes Walker, Trevor Henderson"
+            date="July 14, 2021"
+            desc="Minimalism is a key trend in modern design. Discover how our design team incorporates minimalist principles to create clean and impactful user experiences."></caja-media>
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Company"
+            title="Cultivating a culture of innovation"
+            autor="Travis Howard"
+            date="July 14, 2021"
+            desc="Innovation is at the heart of our company culture. Learn about the initiatives we have in place to foster creativity and drive groundbreaking solutions."></caja-media>
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Engineering"
+            title="Advancing cybersecurity with next-gen solutions"
+            autor="Agnes Walker, Trevor Henderson"
+            date="July 14, 2021"
+            desc="Our next-generation cybersecurity solutions are setting new standards in the industry. Discover how we protect our clients from evolving cyber threats."></caja-media>
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Product"
+            title="Enhancing customer experience through innovation"
+            autor="Travis Howard"
+            date="July 14, 2021"
+            desc="Our innovative approaches are enhancing customer experience. Learn about the new features and improvements that are delighting our users."></caja-media>
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Engineering"
+            title="Pioneering sustainable engineering solutions"
+            autor="Kate Morrison"
+            date="July 14, 2021"
+            desc="Learn about our commitment to sustainability and the innovative engineering solutions we're implementing to create a greener future. Discover the impact of"></caja-media>
 
             <caja-media
             class="card"
-            title="Designing for the future: trends and insights"
-            desc="Stay ahead of the curve with the latest design trends and insights."></caja-media>
+            cat="Product"
+            title="Maximizing efficiency with our latest product updates"
+            autor="Cindy Baker"
+            date="July 14, 2021"
+            desc="Our recent product updates are designed to help you maximize efficiency and achieve more. Get a detailed overview of the new features and improvements that"></caja-media>
             
 
             </section>
