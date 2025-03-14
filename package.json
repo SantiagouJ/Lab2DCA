@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/SantiagouJ/Lab2DCA#readme",
   "dependencies": {
-    "serve": "^14.2.4"
+    "serve": "^14.2.4",
+    "server": "^1.0.41"
   }
 }
