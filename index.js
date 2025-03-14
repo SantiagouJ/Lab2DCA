@@ -13,8 +13,15 @@ class AppContainer extends HTMLElement{
     render(){
         this.shadowRoot.innerHTML = `
             <link rel="stylesheet" href="style.css" />
-            <categorie-nav></categorie-nav>
 
+            <div class="title">
+
+                <h1>Blog</h1>
+                <p>Stay in the loop with the latest about our products</p>
+
+            </div>
+
+            <categorie-nav></categorie-nav>
             <section class="highlight-card">
 
             <caja-grande 
@@ -46,7 +53,8 @@ class AppContainer extends HTMLElement{
 
                 <section class="db-card">
 
-                    <caja-peque class="card-no-img" ></caja-peque>
+                    <caja-peque class="card-no-img"
+                    title="Our company's journey: milestones and achievements" ></caja-peque>
                     <caja-peque class="card-no-img"></caja-peque>
 
                 </section>
@@ -56,6 +64,12 @@ class AppContainer extends HTMLElement{
                 img="./public/photos/img4.jpg"></caja-peque>
 
             </section>
+
+                <div class="title">
+
+                    <h1>Latest</h1>
+                    
+                </div>
 
             <section class="foter-card">
 
@@ -101,6 +115,7 @@ class AppContainer extends HTMLElement{
             
 
             </section>
+            <dial-numbers></dial-numbers>
 
 
         `
